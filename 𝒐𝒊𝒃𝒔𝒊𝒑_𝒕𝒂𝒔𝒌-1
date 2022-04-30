@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page Design Using HTML & CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,500&family=Tapestry&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <img src="pepsi_logo.png" class="logo"> 
+            <nav>
+            <ul>
+                <li><a href ="#home">Home</a></li>
+                <li><a href ="#products">Products</a></li>
+                <li><a href ="#community">Community</a></li>
+                <li><a href ="#contact">Contact</a></li>
+            </ul>  
+            </nav>
+            <button id="btn1">Log In</button>
+            <button id="btn2">Sign Up</button>
+        </div>
+        
+        
+        <div class="content">
+            <div class="text">
+                <h1>Be Young, Have Fun, <br> <span>Drink Pepsi!!!</span></h1>
+                <p>Love is like pepsi "Yeh dil maange more"<br>Friendship is like priyagold "Haq se maango" <br>and A girl is like detergent powder "Pehle istimaal karo phir vishvas karo".
+                
+                </p>
+                
+            </div>
+            <button class="btn3">Buy Now</button>
+        </div>
+   </div>
+</body>
+</html>
+
+
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    
+  }
+  
+  nav ul li {
+    display: inline-block;
+    float: left;
+  }
+  
+   nav ul li a {
+    display: block;
+    color: rgb(247, 234, 247);
+   font-size:20px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+ }
+nav ul li a:hover {
+    background-color: orange;
+    color: rgb(10, 9, 9);
+ }
+
+
+ /* Button*/ 
+
+ #btn1 {
+    text-transform: uppercase;
+    background: rgb(9, 161, 9);
+    display: block;
+    border-radius: 30px;
+    border: 0px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 12px 20px;
+    margin: 10px;
+    text-decoration: none;
+    float: left;
+   
+}
+#btn2 {
+    text-transform: uppercase;
+    background: rgb(9, 147, 9);
+    border-radius: 30px;
+    border: 0px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 12px 20px;
+    margin: 10px;
+    text-decoration: none;
+}
+ #btn1:hover {
+    background-color: orange;
+    color: rgb(255, 255, 255);
+    
+
+}
+#btn2:hover {
+    background-color: orange;
+    color: rgb(255, 255, 255);
+    
+
+}
+
+.img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url("pepsi_can.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-right: 3%;
+    padding-left: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.header {
+    width: 100%;
+    height: 15vh;
+    margin:auto;
+    display: flex;
+    align-items: center; 
+}
+ .section {
+    width:100%;
+    height: 20vh;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+}
+.content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .text {
+    position: relative;
+    max-width: 600px;
+}
+.content .text h1 {
+    font-family:'Tapestry', cursive;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 80px;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+    font-size: 40px;
+    color: rgb(176, 15, 63);
+}
+.content .text h1 span {
+    font-size: 50px;
+    font-family: 'Tapestry', cursive;
+}
+.content .text p {
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    margin-top: 40px;
+    color: #d7c115;
+ }
+.btn3 {
+    background: linear-gradient(to bottom, #ef1111 2%, rgb(129, 8, 20) 100%);
+    margin-top: 300px;
+    margin-right: 240px;
+    padding: 15px 30px;
+    text-align: center;
+    transition: .5s;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: #1b1b1b;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 30px;
+    box-shadow: 1px 4px 12px rgba(94,28,68,.15);
+}
+.btn3:hover{
+    background-color: orange;
+    color: rgb(255, 255, 255);
+
+}
+.logo{
+    width: 200px;
+    margin-top: 100px;
+    cursor:pointer;
+}
